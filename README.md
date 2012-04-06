@@ -1,4 +1,3 @@
-----------------
 What is XML2PDF?
 ----------------
 XML2PDF is a pure python module that can generate PDF files from XML.
@@ -46,7 +45,7 @@ whoever generates the XML. In our case, we use Genshi and python language tools
 to generate our XML2PDF files in several languages.
 
 
----------
+
 Platforms
 ---------
 * Windows (tested)
@@ -55,27 +54,26 @@ Platforms
 * Anywhere you can get Python/Reportlab to work.
 
 
----------
+
 Licensing
 ---------
 BSD License ( http://www.opensource.org/licenses/bsd-license.php )
 
 
-------------
+
 Dependencies
 ------------
 * Python 2.x
 * Reportlab ( http://www.reportlab.com/software/opensource/rl-toolkit ) 
 * lxml ( http://lxml.de/ )
 
--------------
+
 Installation
 -------------
 Simply run the following command within root directory of the project:
     python setup.py install
 
 
--------------
 Using XML2PDF
 -------------
 * Command line *
@@ -87,12 +85,10 @@ Simply run the command:
     xml2pdf.genpdf(>
 
     
---------    
 Tutorial
 --------
+[WIP]
 
-
----------
 Reference
 ---------
 * All Tags *
