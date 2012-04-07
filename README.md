@@ -95,7 +95,7 @@ Reference
 All tags described here support the attributes 'id' and 'class'
 Tags that accept 'posx','posy' are the only ones to allow 'snapto'.
 
-* &lt;rlxml&gt; *
+## &lt;rlxml&gt;
     This tag must be the root of the XML document.
 
     Attributes:
