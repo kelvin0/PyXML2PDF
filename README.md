@@ -78,7 +78,7 @@ Using XML2PDF
 
 ###In your python code:
     >>>from xml2pdf import xml2pdf
-    >>>xml2pdf.genpdf(>
+    >>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
 
     
 Tutorial
