@@ -14,7 +14,7 @@ We have been using this module in healthcare applications for 3 years now,
 and have had great results. Performance is adequate, however it certainly can
 be optimised for greater speed.
 
-* Ease of use:
+*__Ease of use__:
 Anyone who knows some basic HTML/XML concepts will be able to use XML2PDF within
 minutes.
 
