@@ -73,13 +73,13 @@ Simply run the following command within root directory of the project:
 
 Using XML2PDF
 -------------
-* Command line
-Simply run the command:
-    python xml2pdf.py -f input.xml out.pdf
+###Command line
+    Simply run the command:
+        python xml2pdf.py -f input.xml out.pdf
 
-* In your python code:
-    >>>from xml2pdf import xml2pdf
-    >>>xml2pdf.genpdf(>
+###In your python code:
+        >>>from xml2pdf import xml2pdf
+        >>>xml2pdf.genpdf(>
 
     
 Tutorial
@@ -152,37 +152,38 @@ Attributes:
 ### &lt;img&gt;
 
 
-* All tag attributes *
-background-color
-border
-border-color
-bottom-padding
-color
-endx
-endy
-font
-font-size
-font-style
-font-weight
-frame
-grid
-height
-id
-leading
-left-padding
-orientation
-pagesize
-posx
-posy
-rx
-ry
-right-padding
-src
-snapto
-text-align
-top-padding
-transform
-vertical-align
-width
-wrap
+All tag attributes
+------------------
+*background-color
+*border
+*border-color
+*bottom-padding
+*color
+*endx
+*endy
+*font
+*font-size
+*font-style
+*font-weight
+*frame
+*grid
+*height
+*id
+*leading
+*left-padding
+*orientation
+*pagesize
+*posx
+*posy
+*rx
+*ry
+*right-padding
+*src
+*snapto
+*text-align
+*top-padding
+*transform
+*vertical-align
+*width
+*wrap
 
