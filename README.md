@@ -95,64 +95,64 @@ Reference
 All tags described here support the attributes 'id' and 'class'
 Tags that accept 'posx','posy' are the only ones to allow 'snapto'.
 
-## &lt;rlxml&gt;
-    This tag must be the root of the XML document.
+### &lt;rlxml&gt;
+This tag must be the root of the XML document.
 
-    Attributes:
-    None
+Attributes:
+None
 
-<rlframe>    
-    Frames are a concept used in Reportlab. They are containers in which
-    other elements can reside. Elements within a frame cannot have posx
-    and posy attributes, they are positionned in a 'flow' within the frame.
-    
-    Attributes:
-    posx, posy, height, width
-    
-<rlbox>
-    Draws a box.
-    
-    Attributes:
-    posx, posy, height, width, background-color, border, color
-    
-<rlline>
-    Draws a line.
-    
-    Attributes:
-    posx, posy, endx, endy, border, color
-    
-<rlellipse>
-    Draws an ellipse (or circle).
-    
-    Attributes:
-    posx, posy, rx, ry, border, color
-    
-<rltransform>
-    Allows to transform the canvas through translations, rotations and scaling.
-    All elements withing the tranform tags will be tranformed accordingly.
-    Transforms can contain other tranforms, so they can 'accumulate' several
-    nested tranforms
-    
-    Attributes:
-    transform = "rotate:degrees"    or 
-    ...       = "translate:tx:ty"   or 
-    ...       = "scale:multx:multy"
-    
-<head>
+### &lt;rlframe&gt;    
+Frames are a concept used in Reportlab. They are containers in which
+other elements can reside. Elements within a frame cannot have posx
+and posy attributes, they are positionned in a 'flow' within the frame.
 
-<body>
+Attributes:
+posx, posy, height, width
+    
+### &lt;rlbox&gt;
+Draws a box.
 
-<pagebreak>
+Attributes:
+posx, posy, height, width, background-color, border, color
+    
+### &lt;rlline&gt;
+Draws a line.
 
-<comment>
+Attributes:
+posx, posy, endx, endy, border, color
+    
+### &lt;rlellipse&gt;
+Draws an ellipse (or circle).
 
-<styles>
+Attributes:
+posx, posy, rx, ry, border, color
+    
+### &lt;rltransform&gt;
+Allows to transform the canvas through translations, rotations and scaling.
+All elements withing the tranform tags will be tranformed accordingly.
+Transforms can contain other tranforms, so they can 'accumulate' several
+nested tranforms
 
-<style>
+Attributes:
+transform = "rotate:degrees"    or 
+...       = "translate:tx:ty"   or 
+...       = "scale:multx:multy"
+    
+### &lt;head&gt;
 
-<p>
+### &lt;body&gt;
 
-<img>
+### &lt;pagebreak&gt;
+
+### &lt;comment&gt;
+
+### &lt;styles&gt;
+
+### &lt;style&gt;
+
+### &lt;p&gt;
+
+### &lt;img&gt;
 
 
 * All tag attributes *
