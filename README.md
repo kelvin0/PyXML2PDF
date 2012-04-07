@@ -73,13 +73,12 @@ Simply run the following command within root directory of the project:
 
 Using XML2PDF
 -------------
-###Command line
-    Simply run the command:
-        python xml2pdf.py -f input.xml out.pdf
+###Command line:
+    python xml2pdf.py -f input.xml out.pdf
 
 ###In your python code:
-        >>>from xml2pdf import xml2pdf
-        >>>xml2pdf.genpdf(>
+    >>>from xml2pdf import xml2pdf
+    >>>xml2pdf.genpdf(>
 
     
 Tutorial
