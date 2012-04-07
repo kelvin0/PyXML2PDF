@@ -91,7 +91,7 @@ Tutorial
 
 Reference
 ---------
-* All Tags *
+### All Tags
 All tags described here support the attributes 'id' and 'class'
 Tags that accept 'posx','posy' are the only ones to allow 'snapto'.
 
@@ -99,7 +99,7 @@ Tags that accept 'posx','posy' are the only ones to allow 'snapto'.
 This tag must be the root of the XML document.
 
 Attributes:
-None
+    None
 
 ### &lt;rlframe&gt;    
 Frames are a concept used in Reportlab. They are containers in which
@@ -107,25 +107,25 @@ other elements can reside. Elements within a frame cannot have posx
 and posy attributes, they are positionned in a 'flow' within the frame.
 
 Attributes:
-posx, posy, height, width
+    posx, posy, height, width
     
 ### &lt;rlbox&gt;
 Draws a box.
 
 Attributes:
-posx, posy, height, width, background-color, border, color
+    posx, posy, height, width, background-color, border, color
     
 ### &lt;rlline&gt;
 Draws a line.
 
 Attributes:
-posx, posy, endx, endy, border, color
+    posx, posy, endx, endy, border, color
     
 ### &lt;rlellipse&gt;
 Draws an ellipse (or circle).
 
 Attributes:
-posx, posy, rx, ry, border, color
+    posx, posy, rx, ry, border, color
     
 ### &lt;rltransform&gt;
 Allows to transform the canvas through translations, rotations and scaling.
@@ -134,9 +134,9 @@ Transforms can contain other tranforms, so they can 'accumulate' several
 nested tranforms
 
 Attributes:
-transform = "rotate:degrees"    or 
-...       = "translate:tx:ty"   or 
-...       = "scale:multx:multy"
+    transform = "rotate:degrees"    or 
+    ...       = "translate:tx:ty"   or 
+    ...       = "scale:multx:multy"
     
 ### &lt;head&gt;
 
