@@ -1,0 +1,52 @@
+<rlxml>
+
+	<head>
+		<styles>
+            <style name="barcode">
+                font:Free 3 of 9 Extended Regular;
+                font-size:20;
+                top-padding:0.5;
+                left-padding:0.5;
+                height:19;
+            </style>
+			<style name="redhot">
+				border:4.0;
+				color:red;
+			</style>
+			<style name="thinblue">
+				border:1.0;
+				color:blue;
+			</style>
+			<style name="normal">
+				font-size:10;
+				top-padding:0.5;
+				left-padding:0.5;
+				height:11;
+			</style>
+		</styles>		
+	</head>
+	
+	<body>
+		<rlbox id="bigbox" posx="0" posy="0" width="500" height="500" class="redhot"/>
+		
+		
+		<p id="text1" width="80" height="50" background-color="white" class="normal" snapto="bigbox|C|C">
+		BigBox
+		</p>
+        
+        <p id="text2" width="80" height="50" background-color="white" class="barcode" snapto="text1|NW|SW">
+		*BLISTER*
+		</p>
+        
+        <p id="text3" width="80" height="50" background-color="white" class="barcode" snapto="text2|NW|SW">
+		*CARD*
+		</p>
+        
+        <p id="text4" width="80" height="50" background-color="white" class="barcode" snapto="text3|NW|SW">
+		*PATIENT*
+		</p>
+		
+		<pagebreak/>
+	</body>
+	
+</rlxml>

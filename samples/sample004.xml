@@ -1,0 +1,60 @@
+<rlxml>
+	<head>
+		<styles>
+			<style name="normal">
+				font-size:10;
+				top-padding:0.5;
+				left-padding:0.5;
+				height:11;
+			</style>
+            <style name="bigred">
+				font-size:20;
+				top-padding:0.5;
+				left-padding:0.5;
+				height:30;
+                color:red;
+			</style>
+		</styles>		
+	</head>	
+	<body> 
+        <rltransform transform="rotate:-45">
+            <p posx="0" posy="50" width="100" class="normal" >Going Dooown!!!!</p>
+            <rlbox posx="0" posy="50" width="100" class="normal"/>
+        </rltransform> 
+
+        <rltransform transform="translate:700:0">
+            <rltransform transform="rotate:45">
+                <p posx="0" posy="0" width="100" class="normal" >Going uuuuuPP!!!!</p>
+                <rlbox posx="0" posy="0" width="100" class="normal"/>
+            </rltransform>         
+         </rltransform> 
+        
+        <rltransform transform="rotate:-90">
+            <rltransform transform="translate:-306:-346">
+                <p posx="0" posy="0" width="200" class="bigred" >Hello there</p>
+            </rltransform>
+        </rltransform>
+        
+        <rltransform transform="rotate:-15">
+            <rltransform transform="translate:0:-60">
+                <p posx="0" posy="0" width="200" class="normal" >A bit Crrooked</p>
+            </rltransform>
+        </rltransform>
+     
+        <rltransform transform="translate:0:0">
+            <rltransform transform="rotate:90">
+                <p posx="350" posy="850" width="100" class="normal" >JAJAJAZ</p>
+                <rlbox posx="350" posy="850" width="100" class="normal"/>
+            </rltransform>
+        </rltransform>
+        
+        
+        <rltransform transform="rotate:90">
+            <p posx="350" posy="1030" width="100" class="normal" >1234567890</p>
+            <rlbox posx="350" posy="1030" width="100" class="normal"/>
+        </rltransform>
+        
+        
+		<pagebreak/>
+	</body>
+</rlxml>

@@ -1,0 +1,30 @@
+<rlxml>
+	<head>
+		<styles>
+			<style name="normal">
+				font-size:10;
+				top-padding:0.5;
+				left-padding:0.5;
+				height:11;
+			</style>
+		</styles>		
+	</head>
+	
+	<body>
+        <rlbox posx="100" posy="50" width="100" height="100"/>
+        
+		<rlframe id="myframe" posx="100" posy="50" width="80" height="100">
+            <p class="normal" wrap="1">This is a paragraph within a frame.<br/>Please be quiet.\nOK, now talk loudly and clearly
+            </p>
+        </rlframe>
+        
+        <rlbox posx="20" posy="450" width="200" height="50"/>
+        
+		<rlframe id="myframe" posx="20" posy="450" width="200" height="50">
+            <p class="normal" wrap="1">Well, we found another place to chit chat, that is great!\nLet's talk!
+            </p>
+        </rlframe>
+        
+		<pagebreak/>
+	</body>
+</rlxml>
