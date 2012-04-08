@@ -800,14 +800,14 @@ CLASS_RLOBJECTS = {'docElement':rlobject,
 def render( root, pdf, args ):
 
 	regd_fonts = pdfmetrics.getRegisteredFontNames()
-	if 'Free 3 of 9 Extended Regular' not in regd_fonts:
-		pdfmetrics.registerFont(TTFont('Free 3 of 9 Extended Regular', 'FRE3OF9X.TTF'))
-	if 'Arial' not in regd_fonts:
-		pdfmetrics.registerFont(TTFont('Arial', 'Arial.TTF'))
-	if 'Arial Bold' not in regd_fonts:
-		pdfmetrics.registerFont(TTFont('Arial Bold', 'Ariblk.TTF'))
-	if 'Arial Black' not in regd_fonts:
-		pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
+	#if 'Free 3 of 9 Extended Regular' not in regd_fonts:
+	#	pdfmetrics.registerFont(TTFont('Free 3 of 9 Extended Regular', 'FRE3OF9X.TTF'))
+	#if 'Arial' not in regd_fonts:
+	#	pdfmetrics.registerFont(TTFont('Arial', 'Arial.TTF'))
+	#if 'Arial Bold' not in regd_fonts:
+	#	pdfmetrics.registerFont(TTFont('Arial Bold', 'Ariblk.TTF'))
+	#if 'Arial Black' not in regd_fonts:
+	#	pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
 
 	debug = False
 	mycanvas = None
