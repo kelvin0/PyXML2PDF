@@ -5,7 +5,7 @@ It can be used with the command line or integrated in a python application.
 PyXML2PDF allows to generate pixel precise PDF documents in any page size. 
 It can generate very complex pages while being easily edited as an XML file.
 
-PyXML2PDF wraps over the excellent Reportlab python module to generate PDFs
+PyXML2PDF wraps over the excellent Reportlab python module to generate PDFs.
 All PyXML2PDF does is to bring an XML semantic to the concepts used in Reportlab.
 Instead of having to code your PDFs using Reportlab modules, you simply write
 easily maintainable PyXML2PDF files which in turn generate PDF pages.
@@ -31,15 +31,15 @@ to quickly allow generation of PDFs.
 __PyXML2PDF Tags__:
 Please refer to the list of tags in the 'Reference' section (below)
 
-__Templating__:
+__Scripting/Templating/Dynamic content__:
 PyXML2PDF does not include a templating language for dynamically generating 
 XML files. But you can use any templating tool or other method to generate 
 XML files which can then be fed to PyXML2PDF in order to generate a PDF.
 We have been successfully using Genshi as a templating engine.
 
 __Reporting__:
-PyXML2PDF is not a reporting engine. Rather it could be used as a backend 
-for an existing reporting engine, providing it could generate PyXML2PDF layouts.
+PyXML2PDF is not a reporting engine. Rather it could be part of the backend 
+for an existing reporting engine to help generate PDFs.
 
 __Language support__:
 PyXML2PDF supports UTF8, but all language specific stuff should be handled by
