@@ -200,8 +200,8 @@ system.
 - you might also need to configure reportlab to find your system fonts
 
 - Lastly, register the fonts within your code before it calls the genpdf(...) function.
-    >>>from reportlab.pdfbase import pdfmetrics
-    >>>pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
+    from reportlab.pdfbase import pdfmetrics
+    pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
 
 ###background-color
 Background color
