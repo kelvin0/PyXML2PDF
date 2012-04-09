@@ -355,13 +355,17 @@ __Example:__ src="/home/john/pictures/vacation.jpg"
 
 
 ###snapto
-This allows to position an element relatively to another. 
+This allows to position an element relatively to another. If multiple elements have
+the same id, the last one declared will be used as the element we will position
+relatively to.
+
 The attribute values should be of the form : 
 
     snapto="other_element_id|pos_this_element|pos_other_element"
 
 In this way you can snap an element onto another one. Each corner of an element's
-rectangle boundary is NW, NE, SE, SW and C (center)
+rectangle boundary is NW, NE, SE, SW and C (center). Any combination of these 5
+snap positions can be made to suit your needs.
 
         NW            NE
         +-------------+
@@ -371,8 +375,8 @@ rectangle boundary is NW, NE, SE, SW and C (center)
 
 In this manner it is possible to create complex tables quite simply by 'snapping'
 various elements together. This also has the advantage that you can then tweak the
-appearance of your document by simply modifiying one anchor element, instead of
-having to tweak posx, posy for ALL the elements in your xml file.
+appearance of your document by simply modifiying one anchor element posx and posy
+instead of having to tweak posx, posy for ALL the elements in your xml file.
 
 
 Here is a simple example, of 3 elements snapped together:
