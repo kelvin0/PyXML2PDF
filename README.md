@@ -68,20 +68,20 @@ Dependencies
 Installation
 -------------
 Simply run the following command within root directory of the project:
-    python setup.py install
+python setup.py install
 
-
+    
 Using PyXML2PDF
 -------------
 ###Command line:
-    python xml2pdf.py -f input.xml out.pdf
+python xml2pdf.py -f input.xml out.pdf
 
-###In your python code:
-    >>>from PyXML2PDF import xml2pdf
-    >>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
+    ###In your python code:
+>>>from PyXML2PDF import xml2pdf
+>>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
 
     
-Tutorial
+    Tutorial
 =========
 [WIP]
 
@@ -103,69 +103,61 @@ All tags described here support the attributes 'id' and 'class'
 This tag must be the root of the XML document.
 
 Attributes:
-    pagesize="page_width:page_height", orientation="portrait" (or "landscape")
-
+pagesize="page_width:page_height", orientation="portrait" (or "landscape")
 ### &lt;rlframe&gt;    
 Frames are a concept used in Reportlab. They are containers in which
-other elements can reside. Elements within a frame cannot have posx
+    other elements can reside. Elements within a frame cannot have posx
 and posy attributes, they are positionned in a 'flow' within the frame.
 
 Attributes:
-    posx, posy, height, width
-    
+posx, posy, height, width
 ### &lt;rlbox&gt;
 Draws a box.
 
-Attributes:
-    posx, posy, height, width, background-color, border, color, snapto
-    
+    Attributes:
+posx, posy, height, width, background-color, border, color, snapto
 ### &lt;rlline&gt;
 Draws a line.
 
 Attributes:
     posx, posy, endx, endy, border, color
-    
 ### &lt;rlellipse&gt;
 Draws an ellipse (or circle).
 
 Attributes:
-    posx, posy, rx, ry, border, color
-    
-### &lt;rltransform&gt;
+posx, posy, rx, ry, border, color
+    ### &lt;rltransform&gt;
 Allows to transform the canvas through translations, rotations and scaling.
 All elements within the tranform tags will be tranformed accordingly.
 Transforms can be nested, to compose more complex transformations as needed.
 
 Attributes:
     transform = "rotate:degrees"    or 
-    ...       = "translate:tx:ty"   or 
-    ...       = "scale:multx:multy"
-    
+...       = "translate:tx:ty"   or 
+...       = "scale:multx:multy"
+
 ### &lt;head&gt;
 Has no effect on the visual appearance of generated PDF. Simply a way to 
 partition the XML content. It is recommened the 'style(s)' tags be declared
 within the 'header'.
-
-Attributes: None
-
+    
+    Attributes: None
+    
 ### &lt;body&gt;
 Has no effect on the visual appearance of generated PDF. Simply a way to 
 partition the XML content.
 
 Attributes: None
-
 ### &lt;pagebreak&gt;
 This tag is ESSENTIAL in telling PyXML2PDF where each page ends. Otherwise, the
 generated PDF will be a blank page. It should be placed at the end of each page
 that needs to be part of the PDF.
 
 Attributes: None
-
 ### &lt;styles&gt;
 This tag should be used in 'header'. It is simply a way to contain 'style' tags.
 
 Attributes: None
-
 ### &lt;style&gt;
 This tag allows to create a named style. Each style can have specific attributes
 (font, color, height ...) which can be applied to a specific tag to modify it's
@@ -173,8 +165,7 @@ appearance. If an attribute is also specified within a tag, it overrides the
 same attribute for the style used for that tag.
 
 Attributes:
-    name
-    
+name
 ### &lt;p&gt;
 This tags allow to create a textfield (paragraph). The text will be truncated
 by default if it is larger than the width. However, the 'wrap' attribute can
@@ -182,36 +173,33 @@ be used to wrap the text within the width specified. All newline (\n) characters
 within this tag's text will be render as so in PDF document .
 
 Attributes:
-    background-color, font-weight, font-style, leading, color,
-    wrap, text-align, posx, posy, height, width, snapto
-
+background-color, font-weight, font-style, leading, color,
+wrap, text-align, posx, posy, height, width, snapto
 ### &lt;img&gt;
 This tag allows inserting images within the PDF document.
-
-Attributes:
-    border, border-color, posx, posy, height, src, width, snapto
     
+Attributes:
+border, border-color, posx, posy, height, src, width, snapto
+
 All tag attributes
 ------------------
 ###Color definition
 
 __By description__ : red,blue,brown,cyan ... (see reportlab\lib\colors.py)
-
-__By RGB (#RRGGBB)__: #DE22FF, #AA00CC, #123456
+    
+    __By RGB (#RRGGBB)__: #DE22FF, #AA00CC, #123456
 
 ###Fonts
 Default Reportlab fonts are: Times-Roman, Courier, Helvetica, Symbol ZapfDingbats
 
 If you need to use additionnal fonts:
-
+    
 - make sure they are available on your 
 system. 
 
 - you might also need to configure reportlab to find your system fonts
 
-- Lastly, register the fonts within your code before it calls the genpdf(...)
-  function.
----
+- Lastly, register the fonts within your code before it calls the genpdf(...) function.
     >>>from reportlab.pdfbase import pdfmetrics
     >>>pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
 
@@ -240,7 +228,6 @@ __Example:__ color="red", color="#AABBCC"
 The ending x coordinate for an element
 __Example:__
 
-
 ###endy
 The ending y coordinate for an element
 __Example:__
@@ -251,73 +238,50 @@ __Example:__
 
 ###font-size
 __Example:__
-
 ###font-style
 __Example:__
-
 ###font-weight
 __Example:__
-
 ###frame
 __Example:__
-
 ###grid
 __Example:__
-
 ###height
 __Example:__
-
 ###id
 __Example:__
-
 ###leading
 __Example:__
-
 ###left-padding
 __Example:__
-
 ###orientation
 __Example:__
-
 ###pagesize
 __Example:__
-
 ###posx
 __Example:__
-
 ###posy
 __Example:__
-
 ###rx
 __Example:__
-
 ###ry
 __Example:__
-
 ###right-padding
 __Example:__
-
 ###src
 __Example:__
-
 ###snapto
 __Example:__
-
 ###text-align
 __Example:__
-
 ###top-padding
 __Example:__
-
 ###transform
 __Example:__
-
 ###vertical-align
 __Example:__
-
 ###width
 __Example:__
-
 ###wrap
 __Example:__
 
