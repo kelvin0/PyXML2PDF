@@ -199,135 +199,106 @@ __By description__ : red,blue,brown,cyan ... (see reportlab\lib\colors.py)
 
 __By RGB (#RRGGBB)__: #DE22FF, #AA00CC, #123456
 
+
 ###background-color
 Background color
-
 __Example:__ background-color="red", background-color="#FFAABB"
 
 ###border
 Border thickness 
-
 __Example:__ border="2.0", border="3.5"
 
 
 ###border-color
 Border color
-
 __Example:__ border-color="red", border-color="gray"
 
 ###bottom-padding
 The padding to be inserted bewteen the element and it's boundaries
+__Example:__
 
 ###color
-
 __Example:__
 
 ###endx
-
 __Example:__
 
 
 ###endy
-
 __Example:__
 
 ###font
-
 __Example:__
 
 ###font-size
-
 __Example:__
 
 ###font-style
-
 __Example:__
 
 ###font-weight
-
 __Example:__
 
 ###frame
-
 __Example:__
 
 ###grid
-
 __Example:__
 
 ###height
-
 __Example:__
 
 ###id
-
 __Example:__
 
 ###leading
-
 __Example:__
 
 ###left-padding
-
 __Example:__
 
 ###orientation
-
 __Example:__
 
 ###pagesize
-
 __Example:__
 
 ###posx
-
 __Example:__
 
 ###posy
-
 __Example:__
 
 ###rx
-
 __Example:__
 
 ###ry
-
 __Example:__
 
 ###right-padding
-
 __Example:__
 
 ###src
-
 __Example:__
 
 ###snapto
-
 __Example:__
 
 ###text-align
-
 __Example:__
 
 ###top-padding
-
 __Example:__
 
 ###transform
-
 __Example:__
 
 ###vertical-align
-
 __Example:__
 
 ###width
-
 __Example:__
 
 ###wrap
-
 __Example:__
 
