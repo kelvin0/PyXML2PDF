@@ -151,6 +151,15 @@ Put the following code in the sample.py and save it.
 -----------------------------------------------------
 Reference
 =========
+We strongly urge you yo visit the links below in order to fully understand the
+possibilities of PyXML2PDF. Also, they explain in further detail such things as:
+
+* Fonts
+* Colors
+* Coordinate systems
+* Positionning elements relative to one another
+* And many more
+
 [All XML tags] (https://github.com/kelvin0/PyXML2PDF/wiki/Reference:-XML-tags)
 
 [All XML attributes] (https://github.com/kelvin0/PyXML2PDF/wiki/Reference:-XML-attributes)
