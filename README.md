@@ -76,8 +76,8 @@ Using PyXML2PDF
     python xml2pdf.py -f input.xml out.pdf
 
 ###In your python code:
-    >>>from PyXML2PDF import xml2pdf
-    >>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
+    from PyXML2PDF import xml2pdf
+    xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
 
     
 -----------------------------------------------------
