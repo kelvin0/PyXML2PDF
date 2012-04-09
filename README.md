@@ -15,8 +15,7 @@ and have had great results. Performance is adequate, however it certainly can
 be optimised for greater speed.
 
 __Ease of use__:
-Anyone who knows some basic HTML/XML concepts will be able to use PyXML2PDF within
-minutes.
+Anyone who knows some basic HTML/XML concepts will be able to use PyXML2PDF within minutes.
 
 __Styles (CSS)__:
 PyXML2PDF supports the concepts of a simple CSS implementation.
@@ -104,35 +103,40 @@ This tag must be the root of the XML document.
 
 Attributes:
 pagesize="page_width:page_height", orientation="portrait" (or "landscape")
+
 ### &lt;rlframe&gt;    
 Frames are a concept used in Reportlab. They are containers in which
-    other elements can reside. Elements within a frame cannot have posx
+other elements can reside. Elements within a frame cannot have posx
 and posy attributes, they are positionned in a 'flow' within the frame.
 
 Attributes:
 posx, posy, height, width
+
 ### &lt;rlbox&gt;
 Draws a box.
 
-    Attributes:
+Attributes:
 posx, posy, height, width, background-color, border, color, snapto
+
 ### &lt;rlline&gt;
 Draws a line.
 
 Attributes:
-    posx, posy, endx, endy, border, color
+posx, posy, endx, endy, border, color
+
 ### &lt;rlellipse&gt;
 Draws an ellipse (or circle).
 
 Attributes:
 posx, posy, rx, ry, border, color
-    ### &lt;rltransform&gt;
+
+### &lt;rltransform&gt;
 Allows to transform the canvas through translations, rotations and scaling.
 All elements within the tranform tags will be tranformed accordingly.
 Transforms can be nested, to compose more complex transformations as needed.
 
 Attributes:
-    transform = "rotate:degrees"    or 
+transform = "rotate:degrees"    or 
 ...       = "translate:tx:ty"   or 
 ...       = "scale:multx:multy"
 
@@ -141,23 +145,26 @@ Has no effect on the visual appearance of generated PDF. Simply a way to
 partition the XML content. It is recommened the 'style(s)' tags be declared
 within the 'header'.
     
-    Attributes: None
+Attributes: None
     
 ### &lt;body&gt;
 Has no effect on the visual appearance of generated PDF. Simply a way to 
 partition the XML content.
 
 Attributes: None
+
 ### &lt;pagebreak&gt;
 This tag is ESSENTIAL in telling PyXML2PDF where each page ends. Otherwise, the
 generated PDF will be a blank page. It should be placed at the end of each page
 that needs to be part of the PDF.
 
 Attributes: None
+
 ### &lt;styles&gt;
 This tag should be used in 'header'. It is simply a way to contain 'style' tags.
 
 Attributes: None
+
 ### &lt;style&gt;
 This tag allows to create a named style. Each style can have specific attributes
 (font, color, height ...) which can be applied to a specific tag to modify it's
@@ -166,6 +173,7 @@ same attribute for the style used for that tag.
 
 Attributes:
 name
+
 ### &lt;p&gt;
 This tags allow to create a textfield (paragraph). The text will be truncated
 by default if it is larger than the width. However, the 'wrap' attribute can
@@ -173,8 +181,9 @@ be used to wrap the text within the width specified. All newline (\n) characters
 within this tag's text will be render as so in PDF document .
 
 Attributes:
-background-color, font-weight, font-style, leading, color,
-wrap, text-align, posx, posy, height, width, snapto
+background-color, font-weight, font-style, leading, color,wrap, text-align, 
+posx, posy, height, width, snapto
+
 ### &lt;img&gt;
 This tag allows inserting images within the PDF document.
     
