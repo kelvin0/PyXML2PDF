@@ -70,7 +70,8 @@ Dependencies
 Installation
 -------------
 Simply run the following command within root directory of the project:
-python setup.py install
+
+	python setup.py install
 
     
 Using PyXML2PDF
