@@ -193,12 +193,26 @@ Attributes:
     
 All tag attributes
 ------------------
-### Color definition
+###Color definition
 
 __By description__ : red,blue,brown,cyan ... (see reportlab\lib\colors.py)
 
 __By RGB (#RRGGBB)__: #DE22FF, #AA00CC, #123456
 
+###Fonts
+Default Reportlab fonts are: Times-Roman, Courier, Helvetica, Symbol ZapfDingbats
+
+If you need to use additionnal fonts:
+
+- make sure they are available on your 
+system. 
+
+- you might also need to configure reportlab to find your system fonts
+
+- Lastly, register the fonts within your code before it calls the genpdf(...)
+  function.
+    from reportlab.pdfbase import pdfmetrics
+    pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
 
 ###background-color
 Background color
@@ -218,16 +232,20 @@ The padding to be inserted bewteen the element and it's boundaries
 __Example:__
 
 ###color
-__Example:__
+The color of a graphical element
+__Example:__ color="red", color="#AABBCC"
 
 ###endx
+The ending x coordinate for an element
 __Example:__
 
 
 ###endy
+The ending y coordinate for an element
 __Example:__
 
 ###font
+The font name to be used. 
 __Example:__
 
 ###font-size
