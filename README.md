@@ -18,7 +18,7 @@ __Ease of use__:
 Anyone who knows some basic HTML/XML concepts will be able to use PyXML2PDF within minutes.
 
 __Snap elements___: Elements can be positionned relative to one another to create intricate tables.
-[Check the details of this feature](https://github.com/kelvin0/PyXML2PDF/wiki/Snapping-elements).
+[Check the details of this feature](https://github.com/kelvin0/PyXML2PDF/wiki/Snapping-elements-together).
 
 __Styles (CSS)__:
 PyXML2PDF supports the concepts of a simple CSS implementation.
