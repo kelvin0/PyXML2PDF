@@ -185,30 +185,31 @@ All tag attributes
 ------------------
 ###Color definition
 
-__By description__ : red,blue,brown,cyan ... (see reportlab\lib\colors.py)
+By description: red,blue,brown,cyan ... (see reportlab\lib\colors.py)
     
-__By RGB (#RRGGBB)__: #DE22FF, #AA00CC, #123456
+By RGB (#RRGGBB): #DE22FF, #AA00CC, #123456
 
 ###Fonts
-Default Reportlab fonts are: Times-Roman, Courier, Helvetica, Symbol ZapfDingbats
+Default Reportlab fonts are: Times-Roman, Courier, Helvetica, Symbol, ZapfDingbats
 
 If you need to use additional fonts:
     
-    from reportlab.pdfbase import pdfmetrics
-    pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
-    ...
-    xml2pdf.genpdf(xml_filename, pdf_filename)
+    from reportlab.pdfbase.ttfonts import TTFont
+    arial_ttf = TTFont('Arial Black', 'ArialBD.TTF')
+    comic_ttf = TTFont('Comic', 'comic.TTF')
+    xml2pdf.genpdf(xml_filename, pdf_filename, fonts=[arial_ttf,comic_ttf])
     
 - make sure they are available on your system. 
 
 - you might also need to configure reportlab to find your system fonts
 
-- Lastly, register the fonts within your code before it calls the genpdf(...) function.
+- Lastly, register the fonts within the genpdf(...fonts=[..,..,..]) call.
 
     
 ###background-color
 Background color
 __Example:__ background-color="red", background-color="#FFAABB"
+
 
 ###border
 Border thickness 
@@ -223,68 +224,119 @@ __Example:__ border-color="red", border-color="gray"
 The padding to be inserted bewteen the element and it's boundaries
 __Example:__
 
+
 ###color
 The color of a graphical element
 __Example:__ color="red", color="#AABBCC"
+
 
 ###endx
 The ending x coordinate for an element
 __Example:__
 
+
 ###endy
 The ending y coordinate for an element
 __Example:__
+
 
 ###font
 The font name to be used. 
 __Example:__
 
+
 ###font-size
 __Example:__
+
+
 ###font-style
 __Example:__
+
+
 ###font-weight
 __Example:__
+
+
 ###frame
 __Example:__
+
+
 ###grid
 __Example:__
+
+
 ###height
 __Example:__
+
+
 ###id
 __Example:__
+
+
 ###leading
 __Example:__
+
+
 ###left-padding
 __Example:__
+
+
 ###orientation
 __Example:__
+
+
 ###pagesize
 __Example:__
+
+
 ###posx
 __Example:__
+
+
 ###posy
 __Example:__
+
+
 ###rx
 __Example:__
+
+
 ###ry
 __Example:__
+
+
 ###right-padding
 __Example:__
+
+
 ###src
 __Example:__
+
+
 ###snapto
 __Example:__
+
+
 ###text-align
 __Example:__
+
+
 ###top-padding
 __Example:__
+
+
 ###transform
 __Example:__
+
+
 ###vertical-align
 __Example:__
+
+
 ###width
 __Example:__
+
+
 ###wrap
 __Example:__
 

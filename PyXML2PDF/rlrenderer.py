@@ -797,27 +797,23 @@ CLASS_RLOBJECTS = {'docElement':rlobject,
                    'docFrame':rlobjectFRAME}
 
 
-def render( root, pdf, args ):
-
-	regd_fonts = pdfmetrics.getRegisteredFontNames()
-	#if 'Free 3 of 9 Extended Regular' not in regd_fonts:
-	#	pdfmetrics.registerFont(TTFont('Free 3 of 9 Extended Regular', 'FRE3OF9X.TTF'))
-	#if 'Arial' not in regd_fonts:
-	#	pdfmetrics.registerFont(TTFont('Arial', 'Arial.TTF'))
-	#if 'Arial Bold' not in regd_fonts:
-	#	pdfmetrics.registerFont(TTFont('Arial Bold', 'Ariblk.TTF'))
-	#if 'Arial Black' not in regd_fonts:
-	#	pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
+def render( root, pdf, **kwargs ):
 
 	debug = False
 	mycanvas = None
-	if args is not None:
+	if kwargs is not None:
 		try:
-			debug = args['showframes']
+			fonts = kwargs['fonts']
+			map(pdfmetrics.registerFont, fonts)
+		except:
+			pass
+		
+		try:
+			debug = kwargs['showframes']
 		except:
 			pass
 		try:
-			mycanvas = args['canvas']
+			mycanvas = kwargs['canvas']
 		except:
 			pass
 	doc_pagesize = pagesizes.letter

@@ -13,9 +13,9 @@ def consoleprint(msg):
 def devnull(msg):
 	pass
 
-def genpdf(xml_filename, pdf_filename):	
+def genpdf(xml_filename, pdf_filename, **kwargs):	
 	root = rlxmlparser.parser(xml_filename)
-	rlrenderer.render(root, pdf_filename, None)
+	rlrenderer.render(root, pdf_filename, **kwargs)
 	return pdf_filename
 
 def main(argv, stdout=None):
@@ -69,5 +69,4 @@ def main(argv, stdout=None):
 
 if __name__ == '__main__':
 	res, pdf = main(sys.argv,consoleprint)
-	os.system('call %s'%(pdf))
 	sys.exit(res)
