@@ -126,6 +126,20 @@ Tutorial
 	</body>
 	</rlxml>
 
+3) In the same directory as sample.xml, create a file named sample.py. 
+Put the following code in the sample.py and save it.
+
+	import os
+	from PyXML2PDF import xml2pdf
+	from reportlab.pdfbase.ttfonts import TTFont
+    
+	xml = os.path.abspath('./sample.xml')
+	pdf = os.path.abspath('./sample.pdf')
+	
+	xml2pdf.genpdf(xml,pdf)
+	
+	# Show the PDF (this line optionnal)
+	os.system('call %s'%(pdf))
 
 -----------------------------------------------------
 Reference
