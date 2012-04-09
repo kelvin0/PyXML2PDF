@@ -73,11 +73,11 @@ python setup.py install
 Using PyXML2PDF
 -------------
 ###Command line:
-python xml2pdf.py -f input.xml out.pdf
+    python xml2pdf.py -f input.xml out.pdf
 
-    ###In your python code:
->>>from PyXML2PDF import xml2pdf
->>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
+###In your python code:
+    >>>from PyXML2PDF import xml2pdf
+    >>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
 
     
     Tutorial
