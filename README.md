@@ -88,6 +88,8 @@ Using PyXML2PDF
 Tutorial
 =========
 
+[Here are a few sample XML files] (https://github.com/kelvin0/PyXML2PDF/tree/master/samples)
+
 1) Create an xml file named 'sample.xml'. Paste the following in it then save it.
 
     <rlxml>
