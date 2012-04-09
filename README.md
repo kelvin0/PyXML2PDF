@@ -17,6 +17,9 @@ be optimised for greater speed.
 __Ease of use__:
 Anyone who knows some basic HTML/XML concepts will be able to use PyXML2PDF within minutes.
 
+__Snap elements___: Elements can be positionned relative to one another to create intricate tables 
+[Check the details of this feature](https://github.com/kelvin0/PyXML2PDF/wiki/Snapping-elements).
+
 __Styles (CSS)__:
 PyXML2PDF supports the concepts of a simple CSS implementation.
 This allows for flexibility and decoupling of content/appearance (like HTML).
@@ -362,13 +365,11 @@ relatively to.
 The attribute values should be of the form : 
 
     snapto="other_element_id|pos_this_element|pos_other_element"
-
+    
 In this way you can snap an element onto another one. Each corner of an element's
 rectangle boundary is NW, NE, SE, SW and C (center). Any combination of these 5
 snap positions can be made to suit your needs.
 
-Check [this for an example](https://github.com/kelvin0/PyXML2PDF/wiki/) .
-    
 When using this attribute, make sure:
 
 - the id of the element you wish to position this relatively to exists
@@ -376,6 +377,7 @@ When using this attribute, make sure:
 - do not specify posx, posy when wanting to position an element relative to another.
 
 __Example:__ snapto="bigbox|C|C"
+Also, check this for a [detailed look at snapto](https://github.com/kelvin0/PyXML2PDF/wiki/Snapping-elements).
 
 
 ###text-align
