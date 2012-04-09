@@ -193,6 +193,10 @@ Attributes:
     
 All tag attributes
 ------------------
+All colors can be specified in two ways
+* By description : red,blue,brown,cyan ... (see reportlab\lib\colors.py)
+* By RGB: #RRGGBB 
+
 ###background-color
 ###border
 ###border-color
