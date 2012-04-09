@@ -89,7 +89,8 @@ Tutorial
 
 1) Create an xml file named : sample.xml
 
-2)Paste the following in sample.xml and save
+2)Paste the following in sample.xml and save it
+
     <rlxml>
 	<head>
 		<styles>
