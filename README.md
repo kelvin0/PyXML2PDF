@@ -221,135 +221,177 @@ If you need to use additional fonts:
     
 ###background-color
 Background color
+
 __Example:__ background-color="red", background-color="#FFAABB"
 
 
 ###border
 Border thickness 
+
 __Example:__ border="2.0", border="3.5"
 
 
 ###border-color
 Border color
+
 __Example:__ border-color="red", border-color="gray"
 
+
 ###bottom-padding
-The padding to be inserted bewteen the element and it's boundaries
-__Example:__
+The padding to be inserted bewteen the element and it's boundary rectangle defined
+by posx, posy, width, height.
+
+__Example:__bottom-padding="2.0"
 
 
 ###color
 The color of a graphical element
+
 __Example:__ color="red", color="#AABBCC"
 
 
 ###endx
 The ending x coordinate for an element
-__Example:__
+
+__Example:__ endx="223"
 
 
 ###endy
 The ending y coordinate for an element
-__Example:__
+
+__Example:__ endy="678"
 
 
 ###font
 The font name to be used. 
-__Example:__
+
+__Example:__ font="Courier"
 
 
 ###font-size
-__Example:__
+The size of the font to be used.
+
+__Example:__ font-size="12"
 
 
 ###font-style
-__Example:__
+This specifies a modifier for the font
+
+__Example:__ font-style="italic" (or "underline")
 
 
 ###font-weight
-__Example:__
+This specifies if you want a bold typeface or not.
 
-
-###frame
-__Example:__
-
-
-###grid
-__Example:__
+__Example:__ font-weight="bold"
 
 
 ###height
-__Example:__
+Specifies the Height of the element
+
+__Example:__ height="20"
 
 
 ###id
-__Example:__
+This is an identifier for the tag element. It can be any alphanumeric string.
+It does not need to be unique within the xml file, and this id will always refer
+to the last tag element having this id.
 
-
-###leading
-__Example:__
+__Example:__ id="bigbox", id="textfield_001"
 
 
 ###left-padding
-__Example:__
+The padding at the left of the text field rectangle boundary
+
+__Example:__ left-padding="5.0"
 
 
 ###orientation
-__Example:__
+This specifies the orientation of the page
+
+__Example:__ orientation="portrait" (or "lanscape")
 
 
 ###pagesize
-__Example:__
+This specifies the width and height of the page
+
+__Example:__ pagesize="612:792"
 
 
 ###posx
-__Example:__
+This specifies the starting x coordinate
+
+__Example:__ posx="10"
 
 
 ###posy
-__Example:__
+This specifies the starting x coordinate
+
+__Example:__ posy="711"
 
 
 ###rx
-__Example:__
+The horizontal radius size for an ellipse. When rx=ry you get a circle.
+
+__Example:__ rx="134"
 
 
 ###ry
-__Example:__
+The vertical radius size for an ellipse. When rx=ry you get a circle.
+
+__Example:__ rx="89"
 
 
 ###right-padding
-__Example:__
+The padding at the right of the text field rectangle boundary
+
+__Example:__ right-padding="5.0"
 
 
 ###src
-__Example:__
+The path to an image file. 
+
+__Example:__ src="/home/john/pictures/vacation.jpg"
 
 
 ###snapto
-__Example:__
+This allows to position an element relatively to another. 
+The attribute values should be of the form : snapto="element_id|pos_this_element|pos_other_element"
+When using this attribute, make sure:
+
+- the id of the element you wish to position this relatively to exists
+
+- do not specify posx, posy when wanting to position an element relative to another.
+
+__Example:__ snapto="bigbox|C|C"
 
 
 ###text-align
+
 __Example:__
 
 
 ###top-padding
+
 __Example:__
 
 
 ###transform
+
 __Example:__
 
 
 ###vertical-align
+
 __Example:__
 
 
 ###width
+
 __Example:__
 
 
 ###wrap
+
 __Example:__
 
