@@ -356,7 +356,9 @@ __Example:__ src="/home/john/pictures/vacation.jpg"
 
 ###snapto
 This allows to position an element relatively to another. 
-The attribute values should be of the form : snapto="other_element_id|pos_this_element|pos_other_element"
+The attribute values should be of the form : 
+
+    snapto="other_element_id|pos_this_element|pos_other_element"
 
 In this way you can snap an element onto another one. Each corner of an element's
 rectangle boundary is NW, NE, SE, SW and C (center)
