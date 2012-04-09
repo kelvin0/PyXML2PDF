@@ -367,39 +367,7 @@ In this way you can snap an element onto another one. Each corner of an element'
 rectangle boundary is NW, NE, SE, SW and C (center). Any combination of these 5
 snap positions can be made to suit your needs.
 
-        NW            NE
-        +-------------+
-        |      C      |
-        +-------------+
-        SW            SE
-
-In this manner it is possible to create complex tables quite simply by 'snapping'
-various elements together. This also has the advantage that you can then tweak the
-appearance of your document by simply modifiying one anchor element posx and posy
-instead of having to tweak posx, posy for ALL the elements in your xml file.
-
-
-Here is a simple example, of 3 elements snapped together:
-
-                        +---------------+
-                        |       top     |
-            +-----------+---------------+
-            |   mid     |
-            |           |
-            +-----------+-------+
-                        |       | 
-                        |  low  |
-                        |       |
-                        |       |
-                        +-------+   
-
-In the XML file, this could be done as such:
-
-    <p id="top" posx="300" posy="150" width="100" height="20" ...> top </p>
-    
-    <p id="mid" width="75" height="40" snapto"top|NE|SW" ... > mid </p>
-    
-    <p id="low" width="50" height="80" snapto"mid|NW|SE" ... > mid </p>
+Check [this for an example](https://github.com/kelvin0/PyXML2PDF/wiki/) .
     
 When using this attribute, make sure:
 
