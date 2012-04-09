@@ -192,10 +192,12 @@ __By RGB (#RRGGBB)__: #DE22FF, #AA00CC, #123456
 ###Fonts
 Default Reportlab fonts are: Times-Roman, Courier, Helvetica, Symbol ZapfDingbats
 
-If you need to use additionnal fonts:
+If you need to use additional fonts:
     
     from reportlab.pdfbase import pdfmetrics
     pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
+    ...
+    xml2pdf.genpdf(xml_filename, pdf_filename)
     
 - make sure they are available on your system. 
 
