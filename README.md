@@ -356,7 +356,22 @@ __Example:__ src="/home/john/pictures/vacation.jpg"
 
 ###snapto
 This allows to position an element relatively to another. 
-The attribute values should be of the form : snapto="element_id|pos_this_element|pos_other_element"
+The attribute values should be of the form : snapto="other_element_id|pos_this_element|pos_other_element"
+
+In this way you can snap an element onto another one. Each corner of an element's
+rectangle boundary is NW, NE, SE, SW and C (center)
+
+        NW            NE
+        +-------------+
+        |      C      |
+        +-------------+
+        SW            SE
+
+In this manner it is possible to create complex tables quite simply by 'snapping'
+various elements together. This also has the advantage that you can then tweak the
+appearance of your document by simply modifiying one anchor element, instead of
+having to tweak posx, posy for ALL the elements in your xml file.
+
 When using this attribute, make sure:
 
 - the id of the element you wish to position this relatively to exists
