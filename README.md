@@ -80,10 +80,14 @@ Using PyXML2PDF
     >>>xml2pdf.genpdf(in_xml_filename, out_pdf_filename)
 
     
-    Tutorial
+-----------------------------------------------------
+Tutorial
 =========
 [WIP]
 
+
+
+-----------------------------------------------------
 Reference
 =========
 ### Special variables : #PAGE# and #TOTALPAGES##
