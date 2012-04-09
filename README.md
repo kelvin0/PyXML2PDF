@@ -87,9 +87,7 @@ Using PyXML2PDF
 Tutorial
 =========
 
-1) Create an xml file named : sample.xml
-
-2)Paste the following in sample.xml and save it
+1) Create an xml file named 'sample.xml'. Paste the following in it then save it.
 
     <rlxml>
 	<head>
@@ -126,7 +124,7 @@ Tutorial
 	</body>
 	</rlxml>
 
-3) In the same directory as sample.xml, create a file named sample.py. 
+3) In the same directory as 'sample.xml' , create a file named 'sample.py'. 
 Put the following code in the sample.py and save it.
 
 	import os
@@ -141,6 +139,12 @@ Put the following code in the sample.py and save it.
 	# Show the PDF (this line optionnal)
 	os.system('call %s'%(pdf))
 
+4) From the command line in the same directory as the 'sample.py' file, type:
+   (assuming python is installed and in path)
+   
+	python sample.py
+	
+	
 -----------------------------------------------------
 Reference
 =========
