@@ -393,7 +393,7 @@ In the XML file, this could be done as such:
 
     <p id="top" posx="300" posy="150" width="100" height="20" ...> top </p>
     
-    <p id="mid" width="75" height="40" snapto"top|NE|SE" ... > mid </p>
+    <p id="mid" width="75" height="40" snapto"top|NE|SW" ... > mid </p>
     
     <p id="low" width="50" height="80" snapto"mid|NW|SE" ... > mid </p>
     
