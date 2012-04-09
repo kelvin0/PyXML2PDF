@@ -98,7 +98,6 @@ For example a 8.5" x 11" page is 8.5*72 = 612 and 11*72 = 792 (612x792).
 
 ### All Tags
 All tags described here support the attributes 'id' and 'class'
-Tags that accept 'posx','posy' are the only ones to allow 'snapto'.
 
 ### &lt;rlxml&gt;
 This tag must be the root of the XML document.
@@ -118,7 +117,7 @@ Attributes:
 Draws a box.
 
 Attributes:
-    posx, posy, height, width, background-color, border, color
+    posx, posy, height, width, background-color, border, color, snapto
     
 ### &lt;rlline&gt;
 Draws a line.
@@ -177,11 +176,21 @@ Attributes:
     name
     
 ### &lt;p&gt;
-This tags allow to create a textfield (paragraph).
+This tags allow to create a textfield (paragraph). The text will be truncated
+by default if it is larger than the width. However, the 'wrap' attribute can
+be used to wrap the text within the width specified. All newline (\n) characters 
+within this tag's text will be render as so in PDF document .
+
+Attributes:
+    background-color, font-weight, font-style, leading, color,
+    wrap, text-align, posx, posy, height, width, snapto
 
 ### &lt;img&gt;
+This tag allows inserting images within the PDF document.
 
-
+Attributes:
+    border, border-color, posx, posy, height, src, width, snapto
+    
 All tag attributes
 ------------------
 ###background-color
