@@ -87,7 +87,7 @@ Tutorial
 
 Reference
 =========
-### Special variables : #PAGE# and #TOTALPAGES#
+### Special variables : #PAGE# and #TOTALPAGES##
 These variable can be inserted freely in the XML document to specifiy the 
 current page number and the totalnumber of pages (respectively).
 
@@ -211,6 +211,7 @@ system.
 
 - Lastly, register the fonts within your code before it calls the genpdf(...)
   function.
+---
     >>>from reportlab.pdfbase import pdfmetrics
     >>>pdfmetrics.registerFont(TTFont('Arial Black', 'ArialBD.TTF'))
 
