@@ -1,0 +1,41 @@
+<rlxml>
+
+	<head>
+		<styles>
+			<style name="redhot">
+				border:4.0;
+				color:red;
+			</style>
+			<style name="thinblue">
+				border:1.0;
+				color:#AAAAAA;
+			</style>
+			<style name="normal">
+                font:Arial Black;
+				font-size:10;
+				top-padding:0.5;
+				left-padding:0.5;
+				height:11;
+			</style>
+		</styles>		
+	</head>
+	
+	<body>
+		<rlbox id="bigbox" posx="100" posy="120" width="100" height="200" class="redhot"/>
+		
+		<rlbox id="smallbox" width="40" height="20" snapto="bigbox|C|NW"/>
+		
+		<rlline posx="450" posy="230" endx="600" endy="10" class="thinblue" />
+		
+		<p width="40" height="20" background-color="white" class="normal" snapto="bigbox|C|C">
+		BigBox
+		</p>
+        
+        <p posx="300" posy="300" width="40" height="20" font="Comic" background-color="red" class="normal">
+		Comic
+		</p>
+		
+		<pagebreak/>
+	</body>
+	
+</rlxml>
