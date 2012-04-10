@@ -67,6 +67,15 @@ Dependencies
 * lxml ( http://lxml.de/ )
 
 
+Want to help this project?
+--------------------------
+We will gladly accept your help if you have any ideas and suggestions to make this
+project faster/better. You can contact me if you wish to discuss any improvement
+you would like to make. I strongly urge you not to do this on your own, as this
+project's goal is to evolve and improve over time. So please feel free to contribute
+patches and ideas.
+
+
 Installation
 -------------
 Simply run the following command within root directory of the project:
@@ -158,7 +167,7 @@ possibilities of PyXML2PDF. Also, they explain in further detail such things as:
 * Colors
 * Coordinate systems
 * Positionning elements relative to one another
-* And many more
+* And much more ...
 
 [All XML tags] (https://github.com/kelvin0/PyXML2PDF/wiki/Reference:-XML-tags)
 
