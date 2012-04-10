@@ -62,7 +62,7 @@ def main(argv, stdout=None):
 
 	root = sys.modules[moduleNames[0]].parser(options.input_file)        
 	generated_pdf = args[1]        
-	sys.modules[moduleNames[1]].render(root, generated_pdf, args)
+	sys.modules[moduleNames[1]].render(root, generated_pdf)
 
 	return 0,generated_pdf
 
